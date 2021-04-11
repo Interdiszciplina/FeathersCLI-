@@ -1,3 +1,10 @@
 sudo npm install @feathersjs/cli -g
 .gitignore 
 node_modules
+
+
+curl 'http://localhost:3030/authentication/' \
+  -H 'Content-Type: application/json' \
+  --data-binary '{ "strategy": "local", "email": "hello@feathersjs.com", "password": "supersecret" }'
+
+  The accessToken can now be used for other REST requests that require authentication by sending the Authorization: Bearer <JWT for this user> HTTP header.
