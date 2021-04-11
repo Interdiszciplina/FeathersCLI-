@@ -1,0 +1,3 @@
+sudo npm install @feathersjs/cli -g
+.gitignore 
+node_modules
