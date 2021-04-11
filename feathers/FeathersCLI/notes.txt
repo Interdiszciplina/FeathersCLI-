@@ -8,3 +8,5 @@ curl 'http://localhost:3030/authentication/' \
   --data-binary '{ "strategy": "local", "email": "hello@feathersjs.com", "password": "supersecret" }'
 
   The accessToken can now be used for other REST requests that require authentication by sending the Authorization: Bearer <JWT for this user> HTTP header.
+
+  https://github.com/settings/applications/new
